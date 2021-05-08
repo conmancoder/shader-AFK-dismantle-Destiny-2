@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-msgbox, ctr + f to begin dismantle, ctr + d to close program. 
+msgbox, ctr + f to begin dismantle, ctr + d to close program, ctr + s to toggle pause.
 msgbox, 64,, Please put mouse over first shader in inventory before using dismantle hotkey.
 
 
@@ -19,3 +19,7 @@ send {f up}
 return
 
 ^d:: ExitApp	; press ctr&d to close ahk
+
+^s::
+Pause
+return
